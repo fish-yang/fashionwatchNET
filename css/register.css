@@ -1,0 +1,315 @@
+@charset "utf-8";
+/* CSS Document */
+/*===========样式重置============*/
+body,h1,h2,h3,h4,h5,h6,p,ul,li,img,a,input,ol,dl,dt,dd,figure,figcaption,table,tr,td{
+		padding:0; margin:0;
+	}
+ul,ol{ list-style:none}
+img{ border:0; display:block;}
+textarea,select{ outline:none;}
+
+body{ font-size:12px; color:#333; font-family:"微软雅黑";}
+a{ text-decoration:none; color:#333;}
+a:hover{ text-decoration:none;color:#b01330;}
+
+/*=============解决兼容性========*/
+header,footer,nav,figure,figcaption,aside,article,section,main{ display:block;}
+html,body{height:100%;}
+/*=============公共样式========*/
+.w{ width:1000px; margin:0 auto;}
+.l{ float:left;}
+.r{ float:right;}/* CSS Document */
+/*=============header========*/
+header.w{
+		height: 90px;
+		overflow: hidden;
+	}
+header h1{
+		width: 121px;
+		height: 75px;
+		margin:15px 0 0 5px;
+		background: url(../images/register/logo-ico.jpg) no-repeat;
+	}
+header h1 a{ 
+		display: block;
+		width:100%;
+		height: 100%;
+ 	}	
+header h2{
+		width:146px;
+		height: 46px;
+		margin:34px 0 0 19px;
+		background: url(../images/register/logoname.jpg) no-repeat;
+	}
+/*=============main========*/
+main{
+		width: 100%;
+		height: 480px;
+		background: url(../images/register/main-banner.jpg) no-repeat center;
+		position:relative;
+	}
+main>a{
+		display: block;
+		width:100%;
+		height: 100%;
+	}
+main .register{
+		width:284px;
+		height: 371px;
+		background: #fff;
+		box-shadow: 0 0 0 2px #ddd;
+		position: absolute;
+		top: 38px;
+		right:66px;
+		padding:19px 28px 10px;
+	}
+main .register h2{
+		margin-left:2px; 
+		width:282px;
+		height: 48px;
+		line-height: 48px;
+		font-size: 20px;
+		color: #333;
+		font-weight: 100;
+	}
+main .register h2>span{
+		font-size: 12px;
+		color: #666;
+		display: inline-block;
+		height: 48px;
+		position: relative;
+		cursor: pointer;
+	}
+/*=============Dynamic========*/
+main .register h2>span.Dynamic1::before{
+		content: "";
+		width: 9px;
+		height: 13px;
+		position: absolute;
+		top: 18px;
+		left: -13px;
+		background: url(../images/register/inputbg.png) no-repeat -3px -51px;
+	}
+/*=============Password========*/
+main .register h2>span.Password1::before{
+		content: "";
+		width: 12px;
+		height: 13px;
+		position: absolute;
+		top: 18px;
+		left: -13px;
+		background: url(../images/register/inputbg.png) no-repeat -23px -51px;
+	}
+main .register form{ 
+		display: block;
+		overflow: hidden; 
+	}
+main .register form>input{
+		width:244px;
+		height: 38px;
+		padding-left: 36px;
+		border:1px solid #ccc;
+		margin-bottom: 20px;
+		display: block;
+		line-height: 38px;
+		color: #999;
+		font-size: 14px;
+	}
+main .register form{ position: relative; }
+/*=============Password========*/
+main .register form.Passwordform>span{
+		display: block;
+		width:16px;
+		height: 15px;
+		position: absolute;
+		top: 12px;
+		left: 10px;
+		background:url(../images/register/inputbg.png) no-repeat ; 
+	}
+main .register form.Passwordform>span:nth-of-type(1){background-position: 0 -2px}	
+main .register form.Passwordform>span:nth-of-type(2){
+		width:12px;
+		height: 15px;
+		background-position:-2px -31px;
+		top:73px;
+		left:12px;
+	}
+/*=============Dynamic========*/
+main .register form.Dynamicform>input:nth-of-type(3){
+		display: inline-block;
+		width: 137px;
+		margin-right: 9px;
+		float: left;
+	}
+main .register form.Dynamicform>input:nth-of-type(4){
+		display: inline-block;
+		width: 98px;
+		padding: 0;
+		height: 40px;
+		float: left;
+		background: none;
+		color: #333;
+		cursor: pointer;
+	}
+main .register form.Dynamicform>input{ position: relative; }
+main .register form.Dynamicform>span{
+		display: block;
+		width:16px;
+		height: 16px;
+		position: absolute;
+		top: 12px;
+		left: 10px;
+		background:url(../images/register/inputbg.png) no-repeat ;
+	}
+main .register form.Dynamicform>span:nth-of-type(1){
+		background-position: -22px -2px;
+	}
+main .register form.Dynamicform>span:nth-of-type(2){
+		background-position: -22px -31px;
+		top:73px;
+		left:12px;
+	}
+main .register form.Dynamicform>span:nth-of-type(3){
+		background-position: -22px -31px;
+		top:133px;
+		left:12px;
+	}
+main .register form.Dynamicform>p{
+		width: 90px;
+		height: 36px;
+		position: absolute;
+		top:61px;
+		right: 2px;
+		font-size: 14px;
+		line-height: 36px;
+		text-align: center;
+		cursor: pointer;
+	}		
+main .register label{
+		margin-right: 16px;
+		color: #6a6a6a;
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+main .register label>input{
+		top:2px;
+		position: relative;
+	}
+main .register form input.sub{
+		padding: 0;
+		width:280px; 
+		background: #ce0000;
+		color: #fff;
+		font-size: 16px;
+		text-align: center;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+main .register p.reg-p1{
+		width: 100%;
+		height: 19px;
+		line-height: 19px;
+		margin-bottom: 35px;
+	}
+main .register p.reg-p1 a{
+		display: inline-block;
+		color: #6a6a6a;
+	}
+main .register p.reg-p2{
+		width: 100%;
+		height: 29px;
+		line-height: 29px;
+		color: #6a6a6a;
+	}	
+main .register p.reg-p3{
+		width: 100%;
+		height: 34px;
+		line-height: 34px;
+	}
+main .register p.reg-p3	a{
+		margin-top:10px;
+		padding:0 4px 0 22px;
+		display: inline-block;
+		height: 13px;
+		line-height: 13px;
+		float: left;
+		border-right: 1px solid #b9e7ff;
+		border-left: 1px solid #b98181;
+		color: #005aa0;
+		position: relative;
+	}
+main .register p.reg-p3	a::before{
+		content: "";
+		width: 16px;
+		height: 17px;
+		position: absolute;
+		top: -2px;
+		left: 3px;
+		background: url(../images/register/lableimg.gif) no-repeat;
+	}
+main .register p.reg-p3	a:nth-child(1)::before{background-position:0 -130px; }		
+main .register p.reg-p3	a:nth-child(2)::before{background-position:0 -262px; }		
+main .register p.reg-p3	a:nth-child(3)::before{background-position:0 -395px; }		
+main .register p.reg-p3	a:nth-child(4)::before{background-position:0 -461px; }		
+main .register p.reg-p3	a:nth-child(1){border-left:0 }			
+main .register p.reg-p3	a:nth-child(4){border-right:0 }			
+/*=============footer========*/
+footer.w{
+		height:169px;
+	}
+footer .ft-left{
+		width:650px;
+		margin-top:30px;
+		height: 139px;
+	}
+footer .ft-left .ft-left-1{
+		width: 100%;
+		height: 13px;
+		padding:6px 0;
+	}
+footer .ft-left-1 a{
+		padding:0 11px 0 12px;
+		border-right: 1px solid #ddd;
+		height: 13px;
+		line-height: 13px;
+		float: left;
+		color: #333;
+	}
+footer .ft-left-1 a:hover{ color:#c00; }
+footer .ft-left-1 a:nth-child(1){ padding-left:0;}
+footer .ft-left-1 a:last-child{ border:0;}	
+footer .ft-left p{
+		height: 22px;
+		line-height: 22px;
+		width: 100%;
+		color: #999;
+	}
+footer .ft-left p:nth-of-type(1){margin-top: 4px}
+footer .ft-left-2 img{
+		width: 98px;
+		height: 38px;
+		margin: 8px 16px 0 0;
+		float: left;
+	}
+footer .ft-right a{
+		width: 75px;
+		height: 95px;
+		padding:0 10px;
+		display: block;
+		float: left;
+		margin-top:40px;
+	}
+footer .ft-right a img{
+		width: 75px;
+		height: 95px;
+	}	
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+/*===========样式重置============*/
+body,h1,h2,h3,h4,h5,h6,p,ul,li,img,a,input,ol,dl,dt,dd,figure,figcaption,table,tr,td{
+		padding:0; margin:0;
+	}
+ul,ol{ list-style:none}
+img{ border:0; display:block;}
+input,textarea,select{ outline:none;}
+
+body{ font-size:12px; color:#333; font-family:"微软雅黑";background: #fafafa;}
+a{ text-decoration:none; color:#333;}
+a:hover{ text-decoration:none;color:#b01330;}
+
+/*=============解决兼容性========*/
+header,footer,nav,figure,figcaption,aside,article,section,main{ display:block;}
+html,body{height:100%;}
+/*=============公共样式========*/
+.w{ width:840px; margin:0 auto;}
+.l{ float:left;}
+.r{ float:right;}/* CSS Document */
+/*=============header========*/
+header.w{
+		height: 75px;
+		overflow: hidden;
+		padding-top: 52px;
+	}
+header h1{
+		width: 121px;
+		height: 75px;
+		margin:0 0 0 5px;
+		background: url(../images/register/logo-ico.png) no-repeat;
+	}
+header h1 a{ 
+		display: block;
+		width:100%;
+		height: 100%;
+ 	}	
+header h2{
+		width:146px;
+		height: 46px;
+		margin:5px 0 0 19px;
+		background: url(../images/register/logoname.png) no-repeat;
+	}
+/*=============main========*/
+main.w{
+		height: 577px;
+		margin:28px auto 40px;
+		border: 1px solid #ddd;
+		border-radius: 2px;
+		background: #fff;
+		box-sizing: border-box;
+		padding: 50px 0;
+	}
+main.w h2{
+		text-align: center;
+		height:28px;
+		line-height: 28px;
+		padding-bottom:30px;
+		font-size: 28px;
+		color:#000; 
+		font-weight: 100;
+	}
+main.w form{
+		width:340px;
+		padding:0 250px;
+		overflow: hidden;
+	}
+main.w  form p{
+		margin:0 auto 15px;
+	}	
+main.w input{
+		display: block;
+		width:303px;
+		height: 38px;
+		padding-left:35px;
+		border:1px solid #e8e8e8;
+		line-height: 38px;
+	}
+main.w  p:nth-of-type(3) input:nth-of-type(1){
+		width: 193px;
+		display: inline-block;
+		float: left;
+	}
+main.w  p:nth-of-type(3) input:nth-of-type(2){
+		width: 100px;
+		height: 40px;
+		display: inline-block;
+		float: right;
+		padding: 0;
+		background: #fff;
+		text-align: center;
+		border:none;
+		border:1px solid #e8e8e8;
+		cursor: pointer;
+	}
+main.w  form input:nth-child(6){
+		width: 100%;
+		height: 40px;
+		background:#b32424; 
+		border:none;
+		padding: 0;
+		color: #fff;
+		line-height: 40px;
+		text-align: center;
+		margin-top:35px;
+		cursor: pointer;
+	}
+main.w  form p{ position: relative; }
+main.w  form p:nth-child(2) span{
+		display: block;
+		width: 98px;
+		height: 38px;
+		position: absolute;
+		top: 1px;
+		right: 0;
+		text-align: center;
+		line-height: 38px;
+		font-size: 20px;
+		color: #000;
+		cursor: pointer;
+	}
+main.w  form p::before{
+	content:"";
+	width: 12px;
+	height: 16px;
+	background: url(../images/register/login_ico.png) no-repeat ;
+	position: absolute;
+	top: 11px;
+	left: 12px;
+}
+main.w  form p:nth-child(1)::before{ background-position:-32px -161px;}
+main.w  form p:nth-child(2)::before{ 
+		background-position:0-198px;
+		height: 16px;
+		width:16px;
+		left:10px;
+		top:11px;
+	}
+main.w  form p:nth-child(3)::before{ 
+		width: 13px;
+		background-position:-46px -161px;
+	}
+main.w  form p:nth-child(4)::before{ background-position:-17px -161px;}
+main.w  form p:nth-child(5)::before{ background-position:-17px -161px;}
+main.w p{
+		height: 39px;
+		text-align: center;
+		line-height: 39px;
+		color:#999;
+	}
+main.w p a{
+		color: #000;
+	}
+main.w p a:hover{text-decoration: underline;}
+/*=============footer========*/
+footer.w{
+		height: 111px;
+		text-align: center;
+	}
+footer p{
+		height: 21px;
+		width: 100%;
+		line-height: 21px;
+	}
+footer p:nth-child(1){
+		color: #000;
+	}		
+footer p:nth-child(2){
+		color: #999;
+		margin-bottom: 11px;
+	}
+footer .ft-1 a{
+	display: inline-block;
+	height: 38px;
+	margin-right: 10px;
+	text-decoration: underline;
+}			
