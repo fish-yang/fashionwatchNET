@@ -1,0 +1,25 @@
+{
+  "name": "p",
+  "version": "0.0.1",
+  "description": "it is ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fish-yang/FashioningWatch.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "yangdi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fish-yang/FashioningWatch/issues"
+  },
+  "homepage": "https://github.com/fish-yang/FashioningWatch#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

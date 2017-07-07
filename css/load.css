@@ -94,7 +94,7 @@ main.w  p:nth-of-type(3) input:nth-of-type(2){
 		border:1px solid #e8e8e8;
 		cursor: pointer;
 	}
-main.w  form input:nth-child(6){
+main.w  form>input{
 		width: 100%;
 		height: 40px;
 		background:#b32424; 
@@ -107,7 +107,7 @@ main.w  form input:nth-child(6){
 		cursor: pointer;
 	}
 main.w  form p{ position: relative; }
-main.w  form p:nth-child(2) span{
+main.w  form p:nth-of-type(2) span{
 		display: block;
 		width: 98px;
 		height: 38px;
@@ -129,20 +129,41 @@ main.w  form p::before{
 	top: 11px;
 	left: 12px;
 }
-main.w  form p:nth-child(1)::before{ background-position:-32px -161px;}
-main.w  form p:nth-child(2)::before{ 
+/*main.w  form p:nth-of-type(1){margin-bottom:0 ;}*/
+main.w  form p:nth-of-type(1)::before{ background-position:-32px -161px; }
+main.w  form p:nth-of-type(2)::before{ 
 		background-position:0-198px;
 		height: 16px;
 		width:16px;
 		left:10px;
 		top:11px;
 	}
-main.w  form p:nth-child(3)::before{ 
+main.w  form p:nth-of-type(3)::before{ 
 		width: 13px;
 		background-position:-46px -161px;
 	}
-main.w  form p:nth-child(4)::before{ background-position:-17px -161px;}
-main.w  form p:nth-child(5)::before{ background-position:-17px -161px;}
+main.w  form p:nth-of-type(4)::before{ background-position:-17px -161px;}
+main.w  form p:nth-of-type(5)::before{ background-position:-17px -161px;}
+main.w form>span{
+		display: block;
+		padding-left:20px;
+		height: 30px;
+		line-height: 30px;
+		color: #d00;
+		position:relative;
+		display: none;
+		margin-top:-15px;
+	}
+main.w form>span::before{
+		content:"";
+		width: 14px;
+		height: 14px;
+		background: url(../images/register/login_ico.png) no-repeat 0 -179px;
+		position: absolute;
+		top: 8px;
+		left: 0;
+	}
+main.w form>span:last-of-type{margin-bottom: -30px;}	
 main.w p{
 		height: 39px;
 		text-align: center;
