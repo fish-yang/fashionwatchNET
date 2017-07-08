@@ -688,14 +688,15 @@ main .w ul.main-top li a:hover{ color: #ac0000; }
 		overflow:hidden;
 	}
 #main-b-right .mbrb-t{
-		height:24px;
+		height:28px;
 		border:1px solid  #fff;
 		width:937px;
-		padding:10px 16px 10px 15px;
+		padding:8px 16px 8px 15px;
 	}
 #main-b-right .mbrb-t ul.mbrbt-u1{
 		display:inline-block;
 		border:1px solid #d5d5d5;
+		padding:2px 0;
 	}
 #main-b-right .mbrb-t ul.mbrbt-u1 li{
 		float:left;
@@ -744,7 +745,7 @@ main .w ul.main-top li a:hover{ color: #ac0000; }
 	}
 #main-b-right ul.mbrbt-u2{
 		display:inline-block;
-		padding:5px 6px;
+		padding:7px 6px;
 	}
 #main-b-right ul.mbrbt-u2 li{ 
 		float:left;
@@ -763,4 +764,41 @@ main .w ul.main-top li a:hover{ color: #ac0000; }
 		left:14px;
 		background:url(../images/list/choose_input.png) no-repeat 0 -28px;		
 	}
-				
+#main-b-right .mbrb-t p{
+		height:28px;
+		line-height: 28px;
+		display:inline-block;
+	}	
+#main-b-right .mbrb-t p span{
+		float:left;
+	}
+#main-b-right .mbrb-t p span.psp1{
+		margin-right:5px;
+	}
+#main-b-right .mbrb-t p span.psp2{
+		border:1px solid #ddd;
+		display:inline-block;
+		width:52px;
+		height:26px;
+		position:relative;
+		background:#f1f1f1;
+	}
+#main-b-right .mbrb-t p span:nth-child(3){
+		border-left:0;
+		background:#fff;
+	}
+#main-b-right .mbrb-t p span.psp2::after{
+		content:"";
+		width:6px;
+		height:11px;
+		position:absolute;
+		top:8px;
+		left:20px;
+		background:url(../images/list/icon2.png) no-repeat;
+	}
+#main-b-right .mbrb-t p span:nth-child(2)::after{
+		background-position:-113px -42px;
+	}					
+#main-b-right .mbrb-t p span:nth-child(3)::after{
+		background-position:-167px -42px;
+	}

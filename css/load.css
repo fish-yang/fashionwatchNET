@@ -76,6 +76,7 @@ main.w input{
 		padding-left:35px;
 		border:1px solid #e8e8e8;
 		line-height: 38px;
+		font-size: 14px;
 	}
 main.w  p:nth-of-type(3) input:nth-of-type(1){
 		width: 193px;
@@ -116,8 +117,8 @@ main.w  form p:nth-of-type(2) span{
 		right: 0;
 		text-align: center;
 		line-height: 38px;
-		font-size: 20px;
-		color: #000;
+		font-size: 24px;
+		color: #00f;
 		cursor: pointer;
 	}
 main.w  form p::before{

@@ -2,6 +2,7 @@
 	header("Content-type: text/html; charset=utf-8");
 	$usertel=$_POST['usertel'];
 	$userPass=$_POST['userPass'];
+	$codenum=$_POST['codenum'];
 	$con=mysql_connect("localhost","root","123456");
 	if(!$con){
 		die("注册失败:".mysql_error());
