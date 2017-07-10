@@ -5,7 +5,16 @@ window.onload = function() {
 	tabmbBorder("#mbl5tab","#mbl-5-l","#mbl-5-r");
 	createM7Lis();
 	tabmbBorder("#mbl7tab","#mbl-7-l","#mbl-7-r");
-	createProductList();
+	$.ajax({
+				url: "../php/getGoodsList.php",
+				type: "get",
+				async: "true",
+				success: function(data) {
+					console.log(data);
+					let productStr=JSON.parse(data);
+					createProductList(productStr);
+				}
+			})
 }
 
 function createM3Lis() {
@@ -82,13 +91,22 @@ function createM7Lis(){
 	str+="，提供美国、德国、瑞士、日本名牌<a href='#'>手表排行</a>、价格、图片、手表推荐信息。所有手表均由品牌商直接供货，100%正品，我们支持各银行信用卡分期付款，全球联保，是多家银行的合作伙伴！"+"<br/>"+"买手表，上万表网！万表网是您网上购买名表的第一选择！</p>";
 	$("#mbl-7-r").html(str);
 }
-function createProductList(){
-		$.ajax({
-					url: "../php/getGoodsList.php",
-					type: "get",
-					async: "true",
-					success: function(data) {
-						let productStr=JSON.parse(data);
-					}
-				})
+function createProductList(objArr){
+	let str="";
+		for(let i=0;i<objArr.length;i++){
+			//let lis=document.createElement("li");
+			let str1="";
+			let Aarr=objArr[i].beiyong3.split("&");
+			for(let j=0;j<Aarr.length;j++){
+				str1+="<a href='#'>"+Aarr[j]+"</a>";
+			}
+			str+="<li><dl><dt><a href='#'><img src='"+objArr[i].goodsImg+"'></a></dt>";
+			str+="<dd><p class='produlisd'>"+objArr[i].beiyong2+"</p><p>"+str1+"</p><p><a href='#'>"+objArr[i].goodsDesc+"</a></p><p><span class='l'>￥"+objArr[i].goodsPrice+"</span><span class='l'>【"+objArr[i].beiyong4+"折】</span><span class='r'>销量"+objArr[i].goodsCount+"</span></p><p><a href='#' class='l'><span>询最低价</span><span></span></a><a href='#' class='r'><span>对比</span>"+"&nbsp;&nbsp;"+"<input type='checkbox'/></a></p></dd></dl></li>";
+		}
+		$("#mbrb-mu").html(str);
+		for(let i=0;i<objArr.length;i++){
+			if(objArr[i].beiyong2==""){
+					$(".produlisd")[i].style.display="none";
+				}
+		}
 	}
