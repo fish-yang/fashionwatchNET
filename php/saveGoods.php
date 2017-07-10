@@ -24,10 +24,10 @@
 	
 	//2、数据保存在数据库中
 	//1）、建立连接（搭桥）
-	$conn = mysql_connect("localhost","root","qianfeng");
+	$conn = mysql_connect("localhost","root","123456");
 	
 	//2）、选择数据库（找目的地）
-	mysql_select_db("shoppingcenter",$conn);
+	mysql_select_db("html703yd",$conn);
 	
 	//3）、传输数据（过桥）
 	//insert语句

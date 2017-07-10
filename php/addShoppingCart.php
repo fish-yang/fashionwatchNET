@@ -7,7 +7,7 @@
 	
 	//2、数据保存在数据库中
 	//1）、建立连接（搭桥）
-	$conn = mysql_connect("localhost","root","qianfeng");
+	$conn = mysql_connect("localhost","root","123456");
 	
 	//2）、选择数据库（找目的地）
 	mysql_select_db("shoppingcenter",$conn);

@@ -5,7 +5,7 @@ window.onload = function() {
 	tabmbBorder("#mbl5tab","#mbl-5-l","#mbl-5-r");
 	createM7Lis();
 	tabmbBorder("#mbl7tab","#mbl-7-l","#mbl-7-r");
-	
+	createProductList();
 }
 
 function createM3Lis() {
@@ -82,3 +82,13 @@ function createM7Lis(){
 	str+="，提供美国、德国、瑞士、日本名牌<a href='#'>手表排行</a>、价格、图片、手表推荐信息。所有手表均由品牌商直接供货，100%正品，我们支持各银行信用卡分期付款，全球联保，是多家银行的合作伙伴！"+"<br/>"+"买手表，上万表网！万表网是您网上购买名表的第一选择！</p>";
 	$("#mbl-7-r").html(str);
 }
+function createProductList(){
+		$.ajax({
+					url: "../php/getGoodsList.php",
+					type: "get",
+					async: "true",
+					success: function(data) {
+						let productStr=JSON.parse(data);
+					}
+				})
+	}

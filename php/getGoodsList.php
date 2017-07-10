@@ -3,10 +3,10 @@
 	
 	//2、数据保存在数据库中
 	//1）、建立连接（搭桥）
-	$conn = mysql_connect("localhost","root","qianfeng");
+	$conn = mysql_connect("localhost","root","123456");
 	
 	//2）、选择数据库（找目的地）
-	mysql_select_db("shoppingcenter",$conn);
+	mysql_select_db("html703yd",$conn);
 	
 	//3）、传输数据（过桥）
 	$sqlstr = "select * from goodsInfo";
@@ -19,7 +19,7 @@
     $query_num =mysql_num_rows($result);
     //echo "行数：".$query_num;
 	
-	$str="[";
+	$str="";
 	
 	$query_row = mysql_fetch_array($result);//游标下移,拿出结果集中的某一行，返回值是拿到的行；
 	while($query_row){
@@ -39,7 +39,7 @@
 			$str = $str.",";
 		}
 	}
-	$str = $str."]";
+	$str ='['.$str.']';
 	//4、关闭数据库
 	mysql_close($conn);
 	

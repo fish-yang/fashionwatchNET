@@ -802,3 +802,136 @@ main .w ul.main-top li a:hover{ color: #ac0000; }
 #main-b-right .mbrb-t p span:nth-child(3)::after{
 		background-position:-167px -42px;
 	}
+#main-b-right .mbrb-m{
+		width:970px;
+		overflow:hidden;
+		background: #fff;
+		padding-bottom: 25px;
+	}
+#main-b-right .mbrb-m ul{
+		padding-left: 15px;
+		overflow: hidden;
+	}
+#main-b-right .mbrb-m ul li{
+		display:inline-block;
+		overflow: hidden;
+		float: left;
+	}	
+#main-b-right .mbrb-m ul li dl{
+		border:3px solid #fff;
+		width:230px;
+		height:395px;
+		margin-top:20px;
+	}
+#main-b-right .mbrb-m ul li dl dt{
+		width:100%;
+		height: 270px;
+		padding: 10px 0;
+		overflow: hidden;
+		text-align: center;
+	}
+#main-b-right .mbrb-m ul li dl dt img{
+		width:240px;
+		height:240px;
+	}
+#main-b-right .mbrb-m ul li dl dd{
+		position:relative;
+		padding-bottom:20px;
+		margin:0 12px;
+	}	
+#main-b-right .mbrb-m ul li dl dd p:nth-child(1){
+	position: absolute;
+	text-align: center;
+	width:100%;
+	height: 20px;
+	line-height: 20px;
+	top:-30px;
+	left:0;
+	background: url(../images/list/icon2.png) no-repeat 0 -61px;
+	color:#fff;
+}
+#main-b-right .mbrb-m ul li dl dd p:nth-child(2){
+		position: absolute;
+		top:-30px;
+		left:0;
+		text-align: center;
+		width:100%;
+		height: 20px;
+		line-height: 20px;
+		display: none;
+	}
+#main-b-right .mbrb-m ul li dl dd p:nth-child(2) a{
+		display: inline-block;
+		float: left;
+		margin-right: 3px;
+		padding: 0 3px;
+		color:#fff;
+		background: #c1c1c1;
+	}
+#main-b-right .mbrb-m ul li dl dd p:nth-child(3){
+		margin-bottom: 8px;
+		height: 30px;
+		line-height: 16px;
+	}
+#main-b-right .mbrb-m ul li dl dd p:nth-child(4){
+		overflow: hidden;
+		margin-bottom: 13px;
+	}
+#main-b-right .mbrb-m ul li dl dd p:nth-child(4) span:nth-child(1){
+		color:#323232;
+		font-weight: bold;
+		display: inline-block;
+	}	
+#main-b-right .mbrb-m ul li dl dd p:nth-child(4) span:nth-child(2){
+		color:#b00;
+		display: inline-block;
+	}	
+#main-b-right .mbrb-m ul li dl dd p:nth-child(4) span:nth-child(3){
+		color:#ccc;
+		display: inline-block;
+	}
+#main-b-right .mbrb-m ul li dl dd p:nth-child(5){
+		position:absolute;
+		width: 100%;
+		padding-top: 10px;
+		border-top:1px solid #ccc;
+		bottom:-5px;
+		line-height: 16px;
+		display: none;
+	}
+#main-b-right .mbrb-m ul li dl dd p:nth-child(5) a:nth-child(1){
+		color:#b00;
+		width: 50%;
+	}
+#main-b-right .mbrb-m ul li dl dd p:nth-child(5) a:nth-child(1) span{
+		display: inline-block;
+		float: left;
+	}
+#main-b-right .mbrb-m ul li dl dd p:nth-child(5) a:nth-child(1) span:nth-child(2){
+		width:18px;
+		height: 18px;
+		background: url(../images/list/kefu.gif) no-repeat;
+	}
+#main-b-right .mbrb-m ul li dl dd p:nth-child(5) a:nth-child(2){
+		color:#b00;
+		width: 50%;
+		text-align: right;
+	}
+#main-b-right .mbrb-m ul li dl dd p:nth-child(5) a:nth-child(2) input{
+		position: relative;
+		top:2px;
+	}
+#main-b-right .mbrb-m ul li:hover dl{
+		border-color: #b00;
+	}
+#main-b-right .mbrb-m ul li:hover dl dd p:nth-child(5){display: block;}
+#main-b-right .mbrb-m ul li:hover dl dd p:nth-child(1){display: none;}
+#main-b-right .mbrb-m ul li:hover dl dd p:nth-child(2){display: block;}
+@keyframes imgLight{
+		0%{filter: brightness(1);}
+		50%{filter: brightness(1.2);}
+		100%{filter: brightness(1);}
+	}
+#main-b-right .mbrb-m ul li:hover dl dt img{
+		animation:imgLight ease 1s ;
+	}						
