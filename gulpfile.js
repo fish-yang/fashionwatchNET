@@ -31,6 +31,6 @@ gulp.task("watch", function() {
 	gulp.watch("php/*.php", ["copyphp"]);
 })
 gulp.task("copyall", function() {
-	gulp.src("*")
+	gulp.src("./**/*")
 	.pipe(gulp.dest("D:\\php\\WWW\\day35"));
 })

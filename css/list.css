@@ -1146,7 +1146,7 @@ main .w ul.main-top li a:hover{ color: #ac0000; }
 	}	
 #main-b-right .mbr-news p span a{color:#aaa;}
 @keyframes movenews{
-	0%{left:0}
+	0%{left:58}
 	25%{left:1000}
 	50%{left:1500}
 	100%{left:2500}
