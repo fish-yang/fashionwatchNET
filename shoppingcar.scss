@@ -5,28 +5,7 @@
 
 /*===========样式重置============*/
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-li,
-img,
-a,
-input,
-ol,
-dl,
-dt,
-dd,
-figure,
-figcaption,
-table,
-tr,
-td {
+body,h1,h2,h3,h4,h5,h6,p,ul,li,img,a,input,ol,dl,dt,dd,figure,figcaption,table,tr,td {
     padding: 0;
     margin: 0;
 }
@@ -134,11 +113,445 @@ header.w {
                     font-weight: bold;
                 }
             }
-            li.bline{
-                li::after{
-                    width:11px;
+        }
+    }
+    .bottom{
+        height:79px;
+        padding:0 14px;
+        .l{
+            height: 79px;
+            h1{
+                float: left;
+               width: 121px;
+               height: 75px;
+               a{
+                   display: block;
+                   width:100%;
+                   height: 75px;
+                   background: url(../images/shoppingcar/logo-ico.jpg) no-repeat;
+               } 
+            }
+            h2{
+                float:left;
+                width: 164px;
+                height: 64px;
+                margin:15px 0 0 10px;
+                background: url(../images/shoppingcar/logoname.jpg) no-repeat;
+            }
+        }
+        ul.r{
+            margin-top:15px;
+            display: inline-block;
+            height: 79px;
+            li{
+                width: 150px;
+                height:17px;
+                background:url(../images/shoppingcar/bgxct.png) repeat-x center -135px;
+                float: left;
+                font-size: 14px;
+                font-weight: bold;
+                text-align: center;
+                padding-top:18px;
+                position: relative;
+                line-height: 17px;
+                span{
+                    width:14px;
+                    height: 14px;
+                    display: block;
+                    position:absolute;
+                    top:0;
+                    left:50%;
+                    margin-left: -7px;
+                    background: url(../images/shoppingcar/bgct.png) no-repeat ;
+                }
+            }
+            li:nth-child(1){
+                span{
+                    background-position:-68px -270px ;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    border: 1px solid #fff;
+                    width:75px;
+                    top:6px;
+                    left:-1px;
+                }
+            }
+            li:nth-child(2){
+                span{
+                    background-position:-68px -305px ;
+                }
+                color:#d00;
+            }
+            li:nth-child(3){
+                span{
+                    background-position:-68px -235px ;
+                }
+                color:#ccc;
+                font-weight:100;
+            }
+            li:nth-child(4){
+                width: 103px;
+                color:#ccc;
+                font-weight:100;
+                span{
+                    background-position:-68px -235px ;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    border: 1px solid #fff;
+                    width:51px;
+                    top:6px;
+                   right:-1px;
                 }
             }
         }
     }
 }
+footer.w{
+    overflow: hidden;
+    padding-bottom: 50px;
+    .f-top{
+        width: 100%;
+        height: 145px;
+        position: relative;
+        background:url(../images/shoppingcar/footer_help.gif) no-repeat ;
+        margin-bottom: 30px;
+        ul{
+            position: absolute;
+            top:52px;
+            li{
+                width: 80px;
+                height: 25px;
+                line-height: 25px;
+                a{
+                    color:#666;
+                    display: inline-block;
+                    height: 25px;
+                }
+            }
+        }
+        ul:nth-child(1){
+            left:307px;
+        }
+        ul:nth-child(2){
+            left:452px;
+        }
+        ul:nth-child(3){
+            left:595px;
+        }
+        ul:nth-child(4){
+            left:739px;
+        }
+        ul:nth-child(5){
+            left:882px;
+        }
+    }
+    p{
+        width:100%;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        color:#666;
+    }
+    p:nth-child(3){
+        color:#999;
+    }
+    .f-bot{
+        padding:10px 0 20px 0;
+        text-align: center;
+        margin: 0 auto;
+        a{
+            display: inline-block;
+            margin-right: 15px;
+        }
+    }
+}
+main.w{
+    padding-bottom:114px;
+    overflow: hidden;
+    .shopcarmodulef{
+        width: 971px;
+        margin-top: 23px;
+        padding:0 15px 0 14px;
+        p:nth-child(1){
+            padding: 0 2px;
+            color:#333;
+            height: 16px;
+            line-height: 16px;
+            padding-bottom: 19px;
+            span{
+                color:#999;
+            }
+            a{
+                color:#333;
+                text-decoration: underline;
+            }
+        }
+        p:nth-child(2){
+            margin: 0 auto;
+            margin-top:85px;
+            line-height: 46px;
+            height: 46px;
+            padding-top: 96px;
+            background: url(../images/shoppingcar/icon_gwc.png) no-repeat center 0 ;
+            font-size: 12px;
+            text-align: center;
+        } 
+        p:nth-child(3){
+            width: 100%;
+            height: 62px;
+            margin-top:10px;
+            text-align: center;
+            a{
+                display: inline-block;
+                width: 142px;
+                height: 62px;
+                background: #b32424;
+                color:#fff;
+                font-size: 14px;
+                line-height: 62px;
+            }
+        }
+    }
+    .shopcarlist{
+        width: 990px;
+        margin-top: 23px;
+        padding:0 5px 0 5px;
+        .u1{
+            background: #f2f2f2;
+            height: 44px;
+            margin-bottom: 21px;
+            li{
+                float: left;
+                font-size: 12px;
+                line-height: 16px;
+                padding-top: 13px;
+            }
+            li:nth-child(1){
+                width: 134px;
+                span{
+                    margin: 0 12px 0 14px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 11px;
+                    height: 11px;
+                    border: 1px solid #ccc;
+                    border-radius: 1px;
+                    background: #fff ;
+                    position: relative;
+                }
+                span.on{
+                   background: #fff url(../images/shoppingcar/bgct.png) no-repeat -188px -306px; 
+                }
+            }
+            li:nth-child(2){
+                width: 310px;
+                padding-left: 40px;
+            }
+            li:nth-child(3){
+                padding-left: 95px;
+            }
+            li:nth-child(4){
+                padding-left: 73px;
+            }
+            li:nth-child(5){
+                padding-left: 100px;
+            }
+        } 
+        table{
+            border-collapse: collapse;
+            width: 988px;
+            border: 1px solid #eee;
+            border-spacing: 0;
+            tr{
+               height: 126px; 
+               td:nth-child(1){
+                   width: 53%;
+                    padding: 12px 0;
+                    dl{
+                        padding-left: 14px;
+                        dt{
+                            float: left;
+                            width: 142px;
+                            span{
+                                margin: 35px 12px 0 14px;
+                                display: inline-block;
+                                width: 11px;
+                                height: 11px;
+                                border: 1px solid #ccc;
+                                border-radius: 1px;
+                                background: #fff ;
+                                position: relative;
+                                float: left;
+                            }
+                            span.on{
+                               background: #fff url(../images/shoppingcar/bgct.png) no-repeat -188px -306px; 
+                            }
+                            a{
+                                display: inline-block;
+                                vertical-align: middle;
+                                width: 90px;
+                                height: 90px;
+                                float:left;
+                                img{
+                                width: 90px;
+                                height: 90px;
+                                }
+                            }
+                        }
+                        dd{
+                            float: left;
+                            width: 280px;
+                            height: 75px;
+                            margin-top:13px;
+                            p:nth-child(1){
+                                height: 34px;
+                                line-height: 17px;
+                                a{
+                                    color:#000;
+                                }
+                            }
+                            p:nth-child(2){
+                                margin-top: 7px;
+                                line-height: 17px;
+                                color:#ccc;
+                            }
+                        }
+                    }
+               }
+               td:nth-child(2){
+                    width: 12%;
+                    padding: 12px 0;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-align: center;
+                    p:nth-child(1){
+                        font-weight: bold;
+                    }
+                    p:nth-child(2){
+                        text-decoration: line-through;
+                    }
+               }
+               td:nth-child(3){
+                   width: 12%;
+                   padding: 12px 0 12px 13px;
+                   text-align: center;
+                   span{
+                       float:left;
+                       width: 21px;
+                       height: 22px;
+                       text-align: center;
+                       line-height: 22px;
+                       color:#fff;
+                       background: #ccc;
+                       font-size: 14px;
+                       cursor: pointer;
+                   }
+                   input{
+                        width: 50px;
+                        height: 20px;
+                        border:none;
+                        background: none;
+                        border-top: 1px solid #d7cbc6;
+                        border-bottom: 1px solid #d7cbc6;
+                        border-color: #d7cbc6;
+                        float: left;
+                        position: relative;
+                        top: 0;
+                        line-height: 22px;
+                        text-align: center;
+                        padding: 0;
+                   }
+               }
+               td:nth-child(4){
+                   width:10%;
+                   padding:12px 0;
+                   line-height: 18px;
+                   color:#f00;
+                   font-weight: bold;
+                   text-align: center;
+               }
+               td:nth-child(5){
+                   width: 10%;
+                   padding:12px 0;
+                   line-height: 18px;
+                   a{
+                       display: inline-block;
+                       width: 44px;
+                       height: 44px;
+                       
+                   }
+                   a:nth-child(1){
+                       background:url(../images/shoppingcar/del.png) no-repeat;
+                   }
+                   a:nth-child(2){
+                       background:url(../images/shoppingcar/saves.png) no-repeat;
+                   }
+               }
+            }
+            tr.on{
+                background: #f3efe7;;
+            }
+        } 
+        .u2{
+            background: #f2f2f2;
+            margin-top: 20px;
+            height: 60px;
+            padding: 0;
+            li{
+                padding-top: 22px;
+                line-height: 16px;
+                float: left;
+                font-size: 14px;
+                color: #666;
+            }
+            li:nth-child(1){
+                 span{
+                    margin: 0 12px 0 14px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 11px;
+                    height: 11px;
+                    border: 1px solid #ccc;
+                    border-radius: 1px;
+                    background: #fff ;
+                    position: relative;
+                }
+                span.on{
+                   background: #fff url(../images/shoppingcar/bgct.png) no-repeat -188px -306px; 
+                }
+            }
+            li:nth-child(2){
+                padding-left: 42px;
+            }
+            li:nth-child(3){
+                padding-left: 410px;
+                padding-top: 13px;
+            }
+            li:nth-child(4){
+                padding-top: 13px;
+                padding-left: 20px;
+                padding-right: 2px;
+                span.s{
+                    color:#b00;
+                }
+            }
+            li:nth-child(5){
+                background: #b32424;
+                cursor: pointer;
+                width: 140px;
+                padding: 0;
+                height: 60px;
+                line-height: 60px;
+                float:right;
+                color:#fff;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+}    
+
